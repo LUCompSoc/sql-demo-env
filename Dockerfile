@@ -10,4 +10,4 @@ COPY . /sql-demo
 
 RUN chmod +x /sql-demo/setup.sh
 
-CMD ["/bin/bash", "-c", "/sql-demo/setup.sh && exec su - postgres && psql -d sql_demo"]
+CMD ["/bin/bash", "-c", "/sql-demo/setup.sh && exec su - postgres"]
